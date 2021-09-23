@@ -8,7 +8,7 @@
       "type": "git",
       "url": "git+https://github.com/natewerm2000/.git"
     },
-    "author": "",
+    "author": "chicken",
     "license": "ISC",
     "dependencies":{
       "express":"4.17.1"
