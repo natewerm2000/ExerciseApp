@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+      .navbar {
+  overflow: true;
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+    </style>
+
+    <title>Universal Fitness1232</title>
+
+</head>
+<body>
+    <div class="container"></div>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://bulma.io">
+                <img src="file:///C:/Users/natew/OneDrive/Desktop/Untitled%20document-1.jpg" width="112" height="28">
+              </a>
+        
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': navBarIsActive }" @click="navBarIsActive = !navBarIsActive" >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div class="navbar-menu" :class="{ 'is-active': navBarIsActive }">
+              <div class="navbar-start">
+                <a class="navbar-item">
+                  Home
+                </a>
+          
+                <a class="navbar-item">
+                  Gyms near me
+                </a>
+               
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      Resistance Training
+                    </a>
+            
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item">
+                        Weights
+                      </a>
+                      <a class="navbar-item">
+                        Reps/Sets counter
+                      </a>
+                      <a class="navbar-item">
+                        Stopwatch
+                      </a>
+                      <a class="navbar-item">
+                        Information
+                      </a>
+                    </div>
+                  </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      Cardio Training
+                    </a>
+            
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item">
+                        Running
+                      </a>
+                      <a class="navbar-item">
+                        Bicycle
+                      </a>
+                      <a class="navbar-item">
+                        Swimming
+                      </a>
+                      <a class="navbar-item">
+                        Stopwatch
+                      </a>
+                      <a class="navbar-item">
+                        Information
+                      </a>
+                    </div>
+                  </div>
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      Social
+                    </a>
+            
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item">
+                        Friends
+                      </a>
+                      <a class="navbar-item">
+                        Photos
+                      </a>
+                      <a class="navbar-item">
+                        Videos
+                      </a>
+                      <a class="navbar-item">
+                        Exercise Plans
+                      </a>
+                      <a class="navbar-item">
+                        Information
+                      </a>
+                    </div>
+                  </div>
+          
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    More
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      About
+                    </a>
+                    <a class="navbar-item">
+                      Careers
+                    </a>
+                    <a class="navbar-item">
+                      Contact us
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Report an issue
+                    </a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-black">
+                      <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+        <h1 class="title">
+          <strong>Universal Fitness</strong>
+        </h1>
+        <p class="subtitle">
+   <strong>all around exercise</strong>
+        </p>
+
+        <article class="message is-black" :class = "{ 'is-hidden': !visible}" :style="`${visible ? '' : 'display:none'}`">
+            <div class="message-header" :style="` font-size: 46`" >
+              <div id = "counter">
+                This is a placeholder for stopwatch {{ counter }}
+              </div>
+              <p>Primary</p>
+              <button class="delete" aria-label="delete" @click="close()"></button>
+            </div>
+            <div class="message-body">
+              hi this is currently a place holder for my exercise app
+            </div>
+          </article>
+
+          <article class="message is-black">
+            <div class="message-header">
+              <p>Oh no!</p>
+              <button class="delete" aria-label="delete"> @click = "close" </button>
+            </div>
+            <div class="message-body">
+              same here
+            </div>
+          </article>
+
+      </div>
+      <script src="https://unpkg.com/vue@next"></script>
+      <script>
+
+    const Counter = {
+  data() {
+    return {
+      counter: 0,
+      now: new Date().toLocaleString(),
+                    visible: true,
+                    navBarIsActive: false,
+    }
+  },
+  mounted() {
+    setInterval(() => {
+      this.counter++
+    }, 1000)
+  
+
+  },
+  methods: {
+    grow(){
+      this.counter += 10
+    },
+    close(){
+      this.visible = false
+    }
+  }
+}
+Vue.createApp(Counter).mount('#counter')  
+
+Vue.createApp(VM).mount('.container')
+
+
+
+
+            let size = 36
+            $(".message-header p").click(function(){
+                size += 10;
+                $(this).closest(".message-header p").css({ fontSize: size });
+            });
+
+            $(".delete").click(function(){
+                $(this).closest(".message").slideUp();
+            });
+      </script>
+
+</body>
+</html>
