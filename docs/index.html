@@ -249,7 +249,9 @@
               </div>
             </div>
           </nav>
-
+<style>h1{text-align: center;}
+  p{text-align: center;}
+  div{text-align: center;}</style>
         <h1 class="title">
           <strong>Universal Fitness</strong>
         </h1>
@@ -257,28 +259,25 @@
    <strong>all around exercise</strong>
         </p>
 
-        <article class="message is-black" :class = "{ 'is-hidden': !visible}" :style="`${visible ? '' : 'display:none'}`">
-            <div class="message-header" :style="` font-size: 46`" >
+        <article class="message is-black">
+            <div class="message-header" :style="` font-size: 98`" >
+              <div class="messagehead">
               <div id = "counter">
-                This is a placeholder for stopwatch {{ counter }}
+                Welcome to Universal Fitness
               </div>
-              <p>Primary</p>
-              <button class="delete" aria-label="delete" @click="close()"></button>
+              </div>
             </div>
             <div class="message-body">
-              hi this is currently a place holder for my exercise app
+              We are an official Exercise site started to enourage those who seek easy and accessible exercise.
+              <p>Including:</p>
+              <p>Cardio such as running, biking etc.</p>
+              <p>Resistence Training such as weight lifting and machine useage</p>
+              <p>and many more!</p>
+              <p></p>
             </div>
           </article>
 
-          <article class="message is-black">
-            <div class="message-header">
-              <p>Oh no!</p>
-              <button class="delete" aria-label="delete"> @click = "close" </button>
-            </div>
-            <div class="message-body">
-              same here
-            </div>
-          </article>
+
 
       </div>
       <script src="https://unpkg.com/vue@next"></script>
