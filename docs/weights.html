@@ -12,7 +12,73 @@
   background-color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
   
-  
+      }
+
+.navbar a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.navbar .login-container {
+  float: right;
+}
+.navbar .signup-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width:120px;
+}
+
+.navbar .login-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: rgb(5, 3, 3);
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.navbar .signup-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: rgb(5, 3, 3);
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .login-container button:hover {
+  background-color: lightblue;
+}
+.navbar .signup-container button:hover {
+  background-color: lightblue;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .login-container {
+    float: none;
+  }
+  .navbar a, .navbar input[type=text], .navbar .login-container button,.navbar .signup-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .navbar input[type=text] {
+    border: 1px solid #ccc;  
+  }
 }
 
     </style>
@@ -46,7 +112,12 @@
           
                 <a class="navbar-item">
                   <nav>
-                    <a href = "workout.html">Workout Plans</a>
+                    <a href = "workout.html">Nutrition</a>
+                  </nav>
+                </a>
+                <a class="navbar-item">
+                  <nav>
+                    <a href = "social.html">Social</a>
                   </nav>
                 </a>
                
@@ -56,84 +127,64 @@
                     </a>
             
                     <div class="navbar-dropdown">
-                      <a class="navbar-item">
-                        <nav>
+                      
                           <a href = "weights.html">Weights</a>
-                        </nav>
-                      </a>
-                      <a class="navbar-item">
-                        <nav>
+                      
                           <a href = "counter.html">Reps/Sets tracker</a>
-                        </nav>
-                      </a>
-                      <a class="navbar-item">
-                        <nav>
+                        
                           <a href = "stopwatch.html">Stopwatch</a>
-                        </nav>
-                      </a>
-                      <a class="navbar-item">
-                        <nav>
+                     
                           <a href = "resistanceInfo.html">Information</a>
-                        </nav>
-                      </a>
+                        
                     </div>
                   </div>
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
                       Cardio Training
                     </a>
+            <style>.navbar-dropdown {
+              display: none;
+              position: absolute;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
             
+            .navbar-dropdown a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              
+            }
+            .navbar-dropdown a:hover {background-color: #ddd;}</style>
                     <div class="navbar-dropdown">
-                      <a class="navbar-item">
-                        <nav>
+                      
+                      
                           <a href = "Running.html">Running</a>
-                        </nav>
-                      </a>
-                      <a class="navbar-item">
-                        <nav>
+                       
+                      
+                        
                           <a href = "bike.html">Bicycle</a>
-                        </nav>
-                      </a>
-                      <a class="navbar-item">
-                        <nav>
+                        
+                     
+                        
                           <a href = "swimming.html">Swimming</a>
-                        </nav>
-                      </a>
-                      <a class="navbar-item">
-                        <nav>
+                        
+                      
+                      
+                        
                           <a href = "stopwatch.html">Stopwatch</a>
-                        </nav>
-                      </a>
-                      <a class="navbar-item">
-                        <nav>
+                        
+                      
+                      
                           <a href = "cardioInfo.html">Information</a>
-                        </nav>
-                      </a>
+                        
+                      
                     </div>
                   </div>
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                      Social
-                    </a>
-            
-                    <div class="navbar-dropdown">
-                      <a class="navbar-item">
-                        Friends
-                      </a>
-                      <a class="navbar-item">
-                        Photos
-                      </a>
-                      <a class="navbar-item">
-                        Videos
-                      </a>
-                      <a class="navbar-item">
-                        Exercise Plans
-                      </a>
-                      <a class="navbar-item">
-                        Information
-                      </a>
-                    </div>
-                  </div>
+                  
           
                 <div class="navbar-item has-dropdown is-hoverable">
                   <a class="navbar-link">
@@ -141,68 +192,224 @@
                   </a>
           
                   <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                      About
-                    </a>
-                    <a class="navbar-item">
-                      Careers
-                    </a>
-                    <a class="navbar-item">
-                      Contact us
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                      Report an issue
-                    </a>
+                    
+                       
+                          <a href = "about.html">About</a>
+                        
+                    
+                    
+                       
+                        <a href = "contactUs.html">Contact Us</a>
+                      
+                    
+                    
+                   
+                      
+                        <a href = "reportIssue.html">Report an issue</a>
+                      
+                    
                   </div>
                 </div>
               </div>
           
               <div class="navbar-end">
                 <div class="navbar-item">
-                  <div class="buttons">
-                    <a class="button is-black">
-                      <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light">
-                      Log in
-                    </a>
-                  </div>
+                  <div class="login-container">
+    
+                    <form action="login.html">
+      
+                      <input type="text" placeholder="Username" name="username">
+      
+                      <input type="text" placeholder="Password" name="psw">
+      
+                      
+                      <button type="submit">Login</button>
+    
+                    </form>
+                   
                 </div>
+                <div class= "signup-container">
+                <form action = "signup.html">
+                  <button type="submit">Sign Up</button>
+                </form>
+              </div>
+              </div>
               </div>
             </div>
           </nav>
+<style>h1{text-align: center;}
+  p{text-align: center;}
+  div{text-align: center;}
+  #titleFont {
+          font-family: "Arial Black", Gadget, sans-serif;
+          font-size: 90px;
+          letter-spacing: 2px;
+          word-spacing: 2px;
+          color: #000000;
+          font-weight: normal;
+          text-decoration: underline solid rgb(68, 68, 68);
+          font-style: normal;
+          font-variant: normal;
+          text-transform: uppercase;
+          }
+          #subtitleFont {
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 28px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;
 
+}.message-body{
+  font-size: 22px;
+ 
+}
+
+</style>
         <h1 class="title">
-          <strong>Universal Fitness</strong>
+          <div id="titleFont">Resistance Training</div>
         </h1>
         <p class="subtitle">
-   <strong>all around exercise</strong>
+          <div id="subtitleFont">Weights</div>
         </p>
 
-        <article class="message is-black" :class = "{ 'is-hidden': !visible}" :style="`${visible ? '' : 'display:none'}`">
-            <div class="message-header" :style="` font-size: 46`" >
-              <div id = "counter">
-                This is a placeholder for stopwatch {{ counter }}
-              </div>
-              <p>Primary</p>
-              <button class="delete" aria-label="delete" @click="close()"></button>
-            </div>
-            <div class="message-body">
-              hi this is currently a place holder for my exercise app
-            </div>
-          </article>
+        
+    <div><p style="float: left;"><img src="file:///C:/Users/natew/OneDrive/Desktop/rouge-dumbbells-th_1.jpg" height="325px" width="616px"></p>
+    <article class="message is-black">
+      <div class="message-header" :style="` font-size: 98`" >
+        <div class="messagehead">
+        <div id = "counter">
+          Dumbbells
+        </div>
+        </div>
+      </div>
+      <div class = "message-body">
+        Dumbbells, the steryotypical free weight that most people think of when they hear the word freeweights.
+        When it comes to resistance/strength training, dumbbells are an important component in many workouts.
+        The uses of dumbbells are almost infinite, ranging from shoulder raises, chest flyers, and bicep curls.
+        Dumbbells can also add resistance to normal commpound movement workouts, like squats and chest presses.
+        <p>Workouts good for dumbbells:</p>
+        <p>Goblet Squats</p>
+        <p>Bench Press</p>
+        <p>Shoulder Press</p>
+        <p>Chest/Rear Deltoid Flys</p>
+        <p>and many more!</p>
+      </div>
+      <div style="clear: left;"></div><p style="float: left;"><img src="file:///C:/Users/natew/OneDrive/Desktop/130lbs-5_2048x.jpg" width="616" height="325"></p>
+      <article class="message is-black">
+        <div class="message-header" :style="` font-size: 98`" >
+          <div class="messagehead">
+          <div id = "counter">
+            Barbells
+          </div>
+          </div>
+        </div>
+        <div class = "message-body">
+          Dumbbells are great for building stability, getting deep range of motion, and isolating muscles.
+          But for raw strength, you’ll want to incorporate barbell training into your routine.
+          If you are looking to gain a lot of overall muscle on your body or even become a body builder, this freeweight is for you.
+          <p>Workouts good for barbells:</p>
+          <p>Lunge</p>
+          <p>Overhead Press</p>
+          <p>Bent-Over Row</p>
+          <p>Bench Press</p>
+          <p>Back Squat</p>
+          <p>Deadlife</p>
+          <p>Power Clean</p>
+        </div>
+        <div style="clear: left;"></div><p style="float: left;"><img src="file:///C:/Users/natew/OneDrive/Desktop/6Q4A6418-Edit-Edit.jpg" width="616" height="325"></p>
+      <article class="message is-black">
+        <div class="message-header" :style="` font-size: 98`" >
+          <div class="messagehead">
+          <div id = "counter">
+            Weight Plates
+          </div>
+          </div>
+        </div>
+        <div class = "message-body">
+          If you want to add weight to your barbells to get stronger, weight plates are the way to go.
+          Weight plates can simply be used by sliding it on your barbell set to add more weight, or they can even be used as compound free weights.
+          <p>These freeweight exercises include:</p>
+          <p>Lateral Raise</p>
+          <p>Front Shoulder Raise</p>
+          <p>Plate Push-Up</p>
+          <p>Overhead Press</p>
+          <p>Side Bench</p>
+          <p>Squat Reach</p>
 
+        </div>
+        <div style="clear: left;"></div><p style="float: left;"><img src="file:///C:/Users/natew/OneDrive/Desktop/14TUSCL402_2.jpg" width="616" height="325"></p>
+      <article class="message is-black">
+        <div class="message-header" :style="` font-size: 98`" >
+          <div class="messagehead">
+          <div id = "counter">
+            Medicine Balls
+          </div>
+          </div>
+        </div>
+        <div class = "message-body">
+          Fresh fruits and vegetables are endowed with almost all of the nutritional principles that our body requires.
+          The health beneits that fruits and veggies give are enournmous, with an excellent source of vitamins, minerals, antioxidants, and dietary fiber.
+          Vegetables are low in calories and fats but contains a great amount of vitamins and minerals.
+          Green and yellow vegetables are rich in calcium, magnesium, potassium, iron, beta-carotene, vitamin B-complex, vitamin C, vitamin A, and vitamin K.
+          Including fruits and veggies in your servings per meal is an excellent start in achieving great nutrition.
+        </div>
+        <div style="clear: left;"></div><p style="float: left;"><img src="file:///C:/Users/natew/OneDrive/Desktop/sandbellyellow.jpg" width="616" height="325"></p>
+        <article class="message is-black">
+          <div class="message-header" :style="` font-size: 98`" >
+            <div class="messagehead">
+            <div id = "counter">
+              Sandbells
+            </div>
+            </div>
+          </div>
+          <div class = "message-body">
+            Fresh fruits and vegetables are endowed with almost all of the nutritional principles that our body requires.
+            The health beneits that fruits and veggies give are enournmous, with an excellent source of vitamins, minerals, antioxidants, and dietary fiber.
+            Vegetables are low in calories and fats but contains a great amount of vitamins and minerals.
+            Green and yellow vegetables are rich in calcium, magnesium, potassium, iron, beta-carotene, vitamin B-complex, vitamin C, vitamin A, and vitamin K.
+            Including fruits and veggies in your servings per meal is an excellent start in achieving great nutrition.
+          </div>
+          <div style="clear: left;"></div><p style="float: left;"><img src="file:///C:/Users/natew/OneDrive/Desktop/HKB-50-1.jpg" width="616" height="325"></p>
           <article class="message is-black">
-            <div class="message-header">
-              <p>Oh no!</p>
-              <button class="delete" aria-label="delete"> @click = "close" </button>
+            <div class="message-header" :style="` font-size: 98`" >
+              <div class="messagehead">
+              <div id = "counter">
+                Kettlebells
+              </div>
+              </div>
             </div>
-            <div class="message-body">
-              same here
+            <div class = "message-body">
+              Fresh fruits and vegetables are endowed with almost all of the nutritional principles that our body requires.
+              The health beneits that fruits and veggies give are enournmous, with an excellent source of vitamins, minerals, antioxidants, and dietary fiber.
+              Vegetables are low in calories and fats but contains a great amount of vitamins and minerals.
+              Green and yellow vegetables are rich in calcium, magnesium, potassium, iron, beta-carotene, vitamin B-complex, vitamin C, vitamin A, and vitamin K.
+              Including fruits and veggies in your servings per meal is an excellent start in achieving great nutrition.
             </div>
-          </article>
+  <style>
+    .p{
+      font-size: 22px
 
+    }
+
+  </style>
+          
+            
+              
+              
+            
+            
+            
+            
+              
+                
+
+
+             
       </div>
       <script src="https://unpkg.com/vue@next"></script>
       <script>
