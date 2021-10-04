@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        
+      .navbar {
+  overflow: true;
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  
+      }
+
+.navbar a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.navbar .login-container {
+  float: right;
+}
+.navbar .signup-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width:120px;
+}
+
+.navbar .login-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: rgb(5, 3, 3);
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.navbar .signup-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: rgb(5, 3, 3);
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .login-container button:hover {
+  background-color: lightblue;
+}
+.navbar .signup-container button:hover {
+  background-color: lightblue;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .login-container {
+    float: none;
+  }
+  .navbar a, .navbar input[type=text], .navbar .login-container button,.navbar .signup-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .navbar input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+    </style>
+
+    <title>Workout plans</title>
+
+</head>
+<body>
+    <div class="container"></div>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://bulma.io">
+                <img src="file:///C:/Users/natew/OneDrive/Desktop/Untitled%20document-1.jpg" width="112" height="28">
+              </a>
+        
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': navBarIsActive }" @click="navBarIsActive = !navBarIsActive" >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div class="navbar-menu" :class="{ 'is-active': navBarIsActive }">
+              <div class="navbar-start">
+                <a class="navbar-item">
+                  <nav>
+                    <a href = "index.html">Home</a>
+                  </nav>
+                </a>
+          
+                <a class="navbar-item">
+                  <nav>
+                    <a href = "workout.html">Nutrition</a>
+                  </nav>
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    Social Network
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    
+                        <a href = "social.html">Social</a>
+                    
+                        <a href = "friends.html">Friends</a>
+                      
+                        <a href = "activityLog.html">Activity Log</a>
+                   
+                      
+                      
+                  </div>
+                </div>
+               
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      Resistance Training
+                    </a>
+            
+                    <div class="navbar-dropdown">
+                      
+                          <a href = "weights.html">Weights</a>
+                      
+                          <a href = "counter.html">Reps/Sets tracker</a>
+                        
+                          <a href = "stopwatch.html">Stopwatch</a>
+                     
+                         
+                        
+                    </div>
+                  </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      Cardio Training
+                    </a>
+            <style>.navbar-dropdown {
+              display: none;
+              position: absolute;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .navbar-dropdown a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              
+            }
+            .navbar-dropdown a:hover {background-color: #ddd;}</style>
+                    <div class="navbar-dropdown">
+                      
+                      
+                          <a href = "Running.html">Running</a>
+                       
+                      
+                        
+                          <a href = "bike.html">Bicycle</a>
+                        
+                     
+                        
+                          <a href = "swimming.html">Swimming</a>
+                        
+                      
+                      
+                        
+                          <a href = "stopwatch.html">Stopwatch</a>
+                        
+                      
+                      
+                       
+                        
+                      
+                    </div>
+                  </div>
+                  
+          
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    More
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    
+                       
+                          <a href = "about.html">About</a>
+                        
+                    
+                    
+                       
+                        <a href = "contactUs.html">Contact Us</a>
+                      
+                    
+                    
+                   
+                      
+                        <a href = "reportIssue.html">Report an issue</a>
+                      
+                    
+                  </div>
+                </div>
+              </div>
+         
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="login-container">
+    
+                    <form action="login.html">
+      
+                      <input type="text" placeholder="Username" name="username">
+      
+                      <input type="text" placeholder="Password" name="psw">
+      
+                      
+                      <button type="submit">Login</button>
+    
+                    </form>
+                   
+                </div>
+                
+                <div class= "signup-container">
+                <form action = "signup.html">
+                  <button type="submit">Sign Up</button>
+                </form>
+              </div>
+              </div>
+              </div>
+            </div>
+          </nav>
+<style>h1{text-align: center;}
+  p{text-align: center;}
+  div{text-align: center;}
+  #titleFont {
+          font-family: "Arial Black", Gadget, sans-serif;
+          font-size: 90px;
+          letter-spacing: 2px;
+          word-spacing: 2px;
+          color: #000000;
+          font-weight: normal;
+          text-decoration: underline solid rgb(68, 68, 68);
+          font-style: normal;
+          font-variant: normal;
+          text-transform: uppercase;
+          }
+          #subtitleFont {
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 28px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;
+
+}.message-body{
+  font-size: 22px;
+ 
+}
+
+</style>
+        <h1 class="title">
+          <div id="titleFont">Universal Fitness</div>
+        </h1>
+        <p class="subtitle">
+          <div id="subtitleFont">all around exercise</div>
+        </p>
+
+        <article class="message is-black">
+            <div class="message-header" :style="` font-size: 98`" >
+              <div class="messagehead">
+              <div id = "counter">
+                Welcome to Universal Fitness
+              </div>
+              </div>
+            </div>
+
+            </div>
+            
+            <style> .message-body{
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 20px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+font-style: normal;
+font-variant: normal;
+
+            }
+            .message-intro{
+                font-size: 48px;
+
+            }
+            .button {background-color: #000000;
+      color: white;
+    } 
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+          
+          </style>
+  
+  
+            <body>
+                <div>Seconds: <span id="time">0</span></div>
+                <button class="button" id="startTimer" value="Start Timer" onclick="start();">Start<br/>
+                <button class="button" id="stopTimer" value="Stop Timer"  onclick="stop();">Stop<br/>
+                <button class="button" id="resetTimer" value="Reset Timer"  onclick="reset();">Reset<br/>
+                <script>
+                    var timeElapsed = 0;
+                    var timerID = -1;
+                    function tick() {
+                        timeElapsed++
+                        document.getElementById("time").innerHTML = timeElapsed;
+                    }
+            
+                    function start() {
+                        if(timerID == -1){
+                            timerID = setInterval(tick, 1000);
+                        }
+                    }
+            
+                    function stop() {
+                        if(timerID != -1){
+                            clearInterval(timerID)
+                            timerID = -1
+                        }
+                    }
+            
+                    function reset() {
+                        stop();
+                        timeElapsed = -1;
+                        tick()
+                    }
+                </script>
+
+  
+          
+            
+      </div>
+      <script src="https://unpkg.com/vue@next"></script>
+      <script>
+
+    const Counter = {
+  data() {
+    return {
+      counter: 0,
+      now: new Date().toLocaleString(),
+                    visible: true,
+                    navBarIsActive: false,
+    }
+  },
+  mounted() {
+    setInterval(() => {
+      this.counter++
+    }, 1000)
+  
+
+  },
+  methods: {
+    grow(){
+      this.counter += 10
+    },
+    close(){
+      this.visible = false
+    }
+  }
+}
+Vue.createApp(Counter).mount('#counter')  
+
+Vue.createApp(VM).mount('.container')
+
+
+
+
+            let size = 36
+            $(".message-header p").click(function(){
+                size += 10;
+                $(this).closest(".message-header p").css({ fontSize: size });
+            });
+
+            $(".delete").click(function(){
+                $(this).closest(".message").slideUp();
+            });
+      </script>
+
+</body>
+</html>

@@ -146,7 +146,7 @@
                         
                           <a href = "stopwatch.html">Stopwatch</a>
                      
-                        
+                         
                         
                     </div>
                   </div>
@@ -191,7 +191,7 @@
                         
                       
                       
-                          
+                    
                         
                       
                     </div>
@@ -287,53 +287,20 @@ text-transform: uppercase;
           <div id="titleFont">Universal Fitness</div>
         </h1>
         <p class="subtitle">
-          <div id="subtitleFont">all around exercise</div>
+          <div id="subtitleFont">Activity Log</div>
         </p>
 
         <article class="message is-black">
             <div class="message-header" :style="` font-size: 98`" >
               <div class="messagehead">
               <div id = "counter">
-                Contact Us:
+                Show off your activity with our Activity Log!
               </div>
               </div>
             </div>
-            <style> .message-body{
-              font-family: "Arial Black", Gadget, sans-serif;
-              font-size: 20px;
-              letter-spacing: 2px;
-              word-spacing: 2px;
-              color: #000000;
-              font-weight: normal;
-              font-style: normal;
-              font-variant: normal;
-                          }
-                        
-                        </style>
-            <div class="message-body">
-              Enter your reps and sets
 
             </div>
-            </div>
-          </div>
-          <p>Enter Workout: <input type="text" placeholder="workout" name="workout"></p>
-          <p>Reps: <input type="text" placeholder="reps" name="reps"></p>
-          <p>x</p>
-          <p>Sets: <input type="text" placeholder="sets" name="sets"></p>
-         <p> <button class="button button5">Calculate total number performed</button></p>
-         <p>place holder to display calculated value (needs javascript)</p>
-          <article class="message is-black">
-            <div class="message-header" :style="` font-size: 98`" >
-              <div class="messagehead">
-              <div id = "counter">
-                
-              </div>
-              </div>
-            </div>
- 
-        
-  <style>
-    .p{
+            <style> .message-body{
 font-family: "Arial Black", Gadget, sans-serif;
 font-size: 20px;
 letter-spacing: 2px;
@@ -342,12 +309,91 @@ color: #000000;
 font-weight: normal;
 font-style: normal;
 font-variant: normal;
-            }
-          
-          
-  </style>
-          
 
+            }
+            .message-intro{
+                font-size: 48px;
+
+            }
+            .button {background-color: #000000;
+      color: white;
+    } 
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+          
+          </style>
+          <div><p style="float: left;"><img src="https://blog.perfectmind.com/hubfs/online-fitness-class-descriptions-header-image.png" width="1260"></p>
+                <div id = "counter">
+                </div>
+                </div>
+              </div>
+             
+              <div class = "message-body">
+                  <div class = "message-intro">
+               <p1>Activity Log:</p1>
+               
+            </div>
+               <p>Post what kind of workouts you have been doing lately</p>
+               <p>Great for tracking your exercise and showing off to your friends!</p>
+
+              </div>
+              <article class="message is-black">
+                <div class="message-header" :style="` font-size: 98`" >
+                  <div class="messagehead">
+                  <div id = "counter">
+                    <div class = "message-body">
+                        <div class="login-container">
+                          <div class="loginTo">
+                            <form action="login.html">
+                              <input class="input is-primary" type="Workout Name" placeholder="Workout Name" style= "width: 400px; height: 100;" >
+                              
+                <p></p>
+                <input class="input is-primary" type="Description" placeholder="Description">
+               
+                </div>
+                              <button class="button button5">Post Workout</button>
+                
+                            </form>
+                      </div>
+
+                  </div>
+                  
+                  </div>
+                  
+                  
+                </div>
+                
+    
+                </div>
+            
+
+                <div style="clear: left;"></div><p style="float: left;"></p>
+                <article class="message is-black">
+                  <div class="message-header" :style="` font-size: 98`" >
+                    <div class="messagehead">
+                    <div id = "counter">
+                      Your posts:
+                    </div>
+                    </div>
+                  </div>
+          
+            posts...
+      </div>
+      <div style="clear: left;"></div><p style="float: left;"></p>
+                <article class="message is-black">
+                  <div class="message-header" :style="` font-size: 98`" >
+                    <div class="messagehead">
+                    <div id = "counter">
+                      Friends Posts:
+                    </div>
+                    </div>
+                  </div>
+          
+            posts...
       </div>
       <script src="https://unpkg.com/vue@next"></script>
       <script>
