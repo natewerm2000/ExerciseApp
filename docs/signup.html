@@ -290,23 +290,27 @@ text-transform: uppercase;
 
       <style>.button {background-color: #000000;
       color: white;} /* Black */
+      .loginTo{
+        width: 300px;
+        text-align: center;
+      }
                 </style>
 
       <div class = "message-body">
         <div class="login-container">
-    
+          <div class="loginTo">
             <form action="login.html">
-                <input type="text" placeholder="Firstname" name="Firstname">
+              <input class="input is-primary" type="FirstName" placeholder="FirstName">
+              
 <p></p>
-                <input type="text" placeholder="Lastname" name="lastn">
+<input class="input is-primary" type="LastName" placeholder="LastName">
 <p></p>
-              <input type="text" placeholder="Username" name="username">
+<input class="input is-primary" type="Username" placeholder="Username">
 <p></p>
-              <input type="text" placeholder="Password" name="psw">
+<input class="input is-primary" type="Password" placeholder="Password">
 <p></p>
-              <input type="text" placeholder="Confrirm Password" name="psw">
-          <p></p>    
-          <p></p>
+<input class="input is-primary" type="Confirm Password" placeholder="Confirm Password">
+</div>
               <button class="button button5">Sign Up!</button>
 
             </form>
