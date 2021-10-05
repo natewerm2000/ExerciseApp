@@ -91,7 +91,7 @@
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
               <a class="navbar-item" href="https://bulma.io">
-                <img src="file:///C:/Users/natew/OneDrive/Desktop/Untitled%20document-1.jpg" width="112" height="28">
+                <img src="https://cdn.dribbble.com/users/541480/screenshots/10860012/jo_dribbble_exercise_takeover_logo-grid_4x.jpg" width="112" height="200">
               </a>
         
           
@@ -116,22 +116,24 @@
                   </nav>
                 </a>
                 <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">
-                    Social Network
-                  </a>
-          
-                  <div class="navbar-dropdown">
-                    
-                        <a href = "social.html">Social</a>
-                    
-                        <a href = "friends.html">Friends</a>
+                    <a class="navbar-link">
+                      Social Network
+                    </a>
+            
+                    <div class="navbar-dropdown">
                       
-                        <a href = "activityLog.html">Activity Log</a>
-                   
+                          <a href = "social.html">Social</a>
                       
-                      
+                          <a href = "friends.html">Friends</a>
+                        
+                          <a href = "activityLog.html">Activity Log</a>
+                          <a href = "progress.html">Progress Tracker</a>
+
+                          <a href = "profile.html">Profile</a>
+                        
+                        
+                    </div>
                   </div>
-                </div>
                
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
@@ -174,7 +176,7 @@
                     <div class="navbar-dropdown">
                       
                       
-                          <a href = "Running.html">Running</a>
+                          <a href = "running.html">Running</a>
                        
                       
                         
@@ -286,7 +288,7 @@ text-transform: uppercase;
           <div id="titleFont">Universal Fitness</div>
         </h1>
         <p class="subtitle">
-          <div id="subtitleFont">Come join us!</div>
+          <div id="subtitleFont">Sign up</div>
         </p>
 
         
@@ -295,7 +297,7 @@ text-transform: uppercase;
       <div class="message-header" :style="` font-size: 98`" >
         <div class="messagehead">
         <div id = "counter">
-          Sign up
+          
         </div>
         </div>
       </div>
@@ -308,25 +310,57 @@ text-transform: uppercase;
       }
                 </style>
 
-      <div class = "message-body">
-        <div class="login-container">
-          <div class="loginTo">
-            <form action="login.html">
-              <input class="input is-primary" type="FirstName" placeholder="FirstName">
-              
-<p></p>
-<input class="input is-primary" type="LastName" placeholder="LastName">
-<p></p>
-<input class="input is-primary" type="Username" placeholder="Username">
-<p></p>
-<input class="input is-primary" type="Password" placeholder="Password">
-<p></p>
-<input class="input is-primary" type="Confirm Password" placeholder="Confirm Password">
+<div class="hero is-fullheight">
+  <h3 class="title has-text-black"></h3>
+<hr class="login-hr">
+<p class="subtitle has-text-black">Please Sign up to enter Universal Fitness</p>
+<div class="box">
+  <div class="box">
+    <img src="https://cdn.dribbble.com/users/541480/screenshots/10860012/jo_dribbble_exercise_takeover_logo-grid_4x.jpg" width = "200px">
+  </div>
+  <div class="title has-text-grey is-5">Please enter your information below.</div>
 </div>
-              <button class="button button5">Sign Up!</button>
 
-            </form>
+  <div class="hero-body">
+    
+    <div class="container has-text-centered">
+      <form>
+        <div class="field">
+          <div class="control">
+            <input class="input is-large" type="email" placeholder="Email" autofocus="">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <input class="input is-large" type="fullName" placeholder="Full Name">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <input class="input is-large" type="username" placeholder="Username" autofocus="">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <input class="input is-large" type="password" placeholder="Password" autofocus="">
+          </div>
+        </div>
+      </form>
+      <label class="checkbox" style="margin: 20px;">
+        <input type="checkbox">
+          Remember me
+      </label>
+      <button class="button is-block is-black is-large is-fullwidth">Login</button>
+      <p class="has-text-grey">
+        <a href="signUp.html">Register</a> &nbsp;·&nbsp;
+        <a href="reportIssue.html">Need Help?</a>
+      </p>
+      <div class="column is-8 is-offset-2">
       </div>
+    </div>
+  </div>
+</div>
+
      
     
        

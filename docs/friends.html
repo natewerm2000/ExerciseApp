@@ -91,7 +91,7 @@
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
               <a class="navbar-item" href="https://bulma.io">
-                <img src="file:///C:/Users/natew/OneDrive/Desktop/Untitled%20document-1.jpg" width="112" height="28">
+                <img src="https://cdn.dribbble.com/users/541480/screenshots/10860012/jo_dribbble_exercise_takeover_logo-grid_4x.jpg" width="112" height="200">
               </a>
         
           
@@ -127,7 +127,9 @@
                           <a href = "friends.html">Friends</a>
                         
                           <a href = "activityLog.html">Activity Log</a>
-                     
+                          <a href = "progress.html">Progress Tracker</a>
+
+                          <a href = "profile.html">Profile</a>
                         
                         
                     </div>
@@ -174,7 +176,7 @@
                     <div class="navbar-dropdown">
                       
                       
-                          <a href = "Running.html">Running</a>
+                          <a href = "running.html">Running</a>
                        
                       
                         
@@ -286,7 +288,7 @@ text-transform: uppercase;
           <div id="titleFont">Universal Fitness</div>
         </h1>
         <p class="subtitle">
-          <div id="subtitleFont">Social</div>
+          <div id="subtitleFont">Sign up</div>
         </p>
 
         
@@ -295,7 +297,7 @@ text-transform: uppercase;
       <div class="message-header" :style="` font-size: 98`" >
         <div class="messagehead">
         <div id = "counter">
-          Friends 
+          
         </div>
         </div>
       </div>
@@ -308,25 +310,121 @@ text-transform: uppercase;
       }
                 </style>
 
-      <div class = "message-body">
-        <div class="login-container">
-          <div class="loginTo">
-            <form action="login.html">
-              <input class="input is-primary" type="FirstName" placeholder="FirstName">
-              
-<p></p>
-<input class="input is-primary" type="LastName" placeholder="LastName">
-<p></p>
-<input class="input is-primary" type="Username" placeholder="Username">
-<p></p>
-<input class="input is-primary" type="Password" placeholder="Password">
-<p></p>
-<input class="input is-primary" type="Confirm Password" placeholder="Confirm Password">
-</div>
-              <button class="button button5">Sign Up!</button>
+<div class="hero is-fullheight">
+  <h3 class="title has-text-black"></h3>
+<hr class="login-hr">
+<p class="subtitle has-text-black">Friends List on Universal Fitness</p>
+<div class="box">
+  <div class="box">
+    <img src="https://cdn.dribbble.com/users/541480/screenshots/10860012/jo_dribbble_exercise_takeover_logo-grid_4x.jpg" width = "200px">
+  </div>
+  
+<style>
+  html, body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
 
-            </form>
+#friend-list { 
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 100%;
+  background: #EEE;
+  list-style-type: none;
+}
+
+.friend {
+  width: 300px;
+  height: 60px;
+  background: #EEE;
+  border-bottom: 1px solid #DDD;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.friend img {
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  border: 2px solid #AAA;
+  object-fit: cover;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.friend .name {
+  font-size: 18px;
+}
+
+.friend.selected {
+  background: #43A047;
+  color: white;
+}
+
+.friend.selected img {
+  border-color: white;
+}
+
+.friend:not(.selected):hover {
+  background: #DDD;
+}
+</style>
+  <div class="hero-body">
+    
+    <div class="container has-text-centered">
+      <form>
+        <ul id='friend-list'>
+          <li class='friend selected'>
+            <img src='' />
+            <div class='name'>
+              Nates friend
+            </div>
+          </li>
+          <li class='friend'>
+            <img src='' />
+            <div class='name'>
+              Nates friend
+            </div>
+          </li>
+          <li class='friend'>
+            <img src='' />
+            <div class='name'>
+              Nates friend
+            </div>
+          </li>
+          <li class='friend'>
+            <img src='' />
+            <div class='name'>
+              Nates friend
+            </div>
+          </li>
+          <li class='friend'>
+            <img src='' />
+            <div class='name'>
+              Nates friend
+            </div>
+          </li>
+          <li class='friend'>
+            <img src='' />
+            <div class='name'>
+              Nates friend
+            </div>
+          </li>
+        </ul>
+      </form>
+     
+      
+      <div class="column is-8 is-offset-2">
       </div>
+    </div>
+  </div>
+</div>
+
      
     
        

@@ -91,7 +91,7 @@
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
               <a class="navbar-item" href="https://bulma.io">
-                <img src="file:///C:/Users/natew/OneDrive/Desktop/Untitled%20document-1.jpg" width="112" height="28">
+                <img src="https://cdn.dribbble.com/users/541480/screenshots/10860012/jo_dribbble_exercise_takeover_logo-grid_4x.jpg" width="112" height="200">
               </a>
         
           
@@ -128,7 +128,9 @@
                       
                         <a href = "activityLog.html">Activity Log</a>
                    
-                      
+                        <a href = "progress.html">Progress Tracker</a>
+
+                        <a href = "profile.html">Profile</a>
                       
                   </div>
                 </div>
@@ -174,7 +176,7 @@
                     <div class="navbar-dropdown">
                       
                       
-                          <a href = "Running.html">Running</a>
+                          <a href = "running.html">Running</a>
                        
                       
                         
@@ -191,7 +193,7 @@
                         
                       
                       
-                    
+                        
                         
                       
                     </div>
@@ -223,7 +225,7 @@
                   </div>
                 </div>
               </div>
-         
+          
               <div class="navbar-end">
                 <div class="navbar-item">
                   <div class="login-container">
@@ -240,7 +242,6 @@
                     </form>
                    
                 </div>
-                
                 <div class= "signup-container">
                 <form action = "signup.html">
                   <button type="submit">Sign Up</button>
@@ -284,117 +285,81 @@ text-transform: uppercase;
 
 </style>
         <h1 class="title">
-          <div id="titleFont">Universal Fitness</div>
+          <div id="titleFont">Progress</div>
         </h1>
         <p class="subtitle">
-          <div id="subtitleFont">Activity Log</div>
+          <div id="subtitleFont">how much progress you made</div>
         </p>
-
+        
+        </div>
         <article class="message is-black">
             <div class="message-header" :style="` font-size: 98`" >
               <div class="messagehead">
               <div id = "counter">
-                Show off your activity with our Activity Log!
-              </div>
-              </div>
-            </div>
-
-            </div>
-            <style> .message-body{
-font-family: "Arial Black", Gadget, sans-serif;
-font-size: 20px;
-letter-spacing: 2px;
-word-spacing: 2px;
-color: #000000;
-font-weight: normal;
-font-style: normal;
-font-variant: normal;
-
-            }
-            .message-intro{
-                font-size: 48px;
-
-            }
-            .button {background-color: #000000;
-      color: white;
-    } 
-.avatar {
-  vertical-align: middle;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-          
-          </style>
-          <div><p style="float: left;"><img src="https://blog.perfectmind.com/hubfs/online-fitness-class-descriptions-header-image.png" width="1260"></p>
-                <div id = "counter">
-                </div>
-                </div>
-              </div>
-             
-              <div class = "message-body">
-                  <div class = "message-intro">
-               <p1>Activity Log:</p1>
-               
-            </div>
-               <p>Post what kind of workouts you have been doing lately</p>
-               <p>Great for tracking your exercise and showing off to your friends!</p>
-
-              </div>
-              <article class="message is-black">
-                <div class="message-header" :style="` font-size: 98`" >
-                  <div class="messagehead">
-                  <div id = "counter">
-                    <div class = "message-body">
-                        <div class="login-container">
-                          <div class="loginTo">
-                            <form action="login.html">
-                              <input class="input is-primary" type="Workout Name" placeholder="Workout Name" style= "width: 400px; height: 100;" >
-                              
-                <p></p>
-                <input class="input is-primary" type="Description" placeholder="Description">
-               
-                </div>
-                              <button class="button button5">Post Workout</button>
                 
-                            </form>
+              </div>
+              </div>
+            </div>
+      
+            <style>.button {background-color: #000000;
+            color: white;} /* Black */
+            .loginTo{
+              width: 300px;
+              text-align: center;
+            }
+                      </style>
+      
+      <div class="hero is-fullheight">
+        <h3 class="title has-text-black"></h3>
+      <hr class="login-hr">
+      <p class="subtitle has-text-black">Universal Fitness activity Log</p>
+      <div class="box">
+        <div class="box">
+          <img src="https://cdn.dribbble.com/users/541480/screenshots/10860012/jo_dribbble_exercise_takeover_logo-grid_4x.jpg" width = "200px">
+        </div>
+        <div class="title has-text-grey is-5">Start a post below</div>
+      </div>
+      
+        <div class="hero-body">
+          
+          <div class="container has-text-centered">
+            <div class="field">
+              <p class="control is-expanded">
+                  <div class="control">
+                      Enter what kind of workout you did:<div class="select is-fullwidth" type="activity">
+                          <select>
+                              <option>Running</option>
+                              <option>Bicycle</option>
+                              <option>Stationary Bicycle</option>
+                              <option>Weight Lifting</option>
+                              <option>Swimming</option>
+                              <option>Food</option>
+                          </select>
                       </div>
-
                   </div>
-                  
-                  </div>
-                  
-                  
-                </div>
-                
-    
-                </div>
+              </p>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input class="input is-large" type="description" placeholder="description">
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input class="input is-large" type="calories" placeholder="calories burned">
+            </div>
+          </div>
+            </form>
             
+            <div class="column is-8 is-offset-2">
+            </div>
+          </div>
+        </div>
+      </div>
 
-                <div style="clear: left;"></div><p style="float: left;"></p>
-                <article class="message is-black">
-                  <div class="message-header" :style="` font-size: 98`" >
-                    <div class="messagehead">
-                    <div id = "counter">
-                      Your posts:
-                    </div>
-                    </div>
-                  </div>
-          
-            posts...
+             
       </div>
-      <div style="clear: left;"></div><p style="float: left;"></p>
-                <article class="message is-black">
-                  <div class="message-header" :style="` font-size: 98`" >
-                    <div class="messagehead">
-                    <div id = "counter">
-                      Friends Posts:
-                    </div>
-                    </div>
-                  </div>
-          
-            posts...
-      </div>
+      
       <script src="https://unpkg.com/vue@next"></script>
       <script>
 
