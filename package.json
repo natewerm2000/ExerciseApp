@@ -4,20 +4,21 @@
     "description": "The repo for me.",
     "main": "index.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "dev": "nodemon --watch server server/index"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon --watch server server/index"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/natewerm2000/ExerciseApp.git"
+        "type": "git",
+        "url": "git+https://github.com/natewerm2000/ExerciseApp.git"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "express": "4.17.1",
-      "lodash": "^4.17.21"
+        "@vue/cli": "^4.5.14",
+        "express": "4.17.1",
+        "lodash": "^4.17.21"
     },
     "devDependencies": {
-      "nodemon": "^2.0.12"
+        "nodemon": "^2.0.12"
     }
-  }
+}
