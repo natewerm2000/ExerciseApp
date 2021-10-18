@@ -1,11 +1,16 @@
 <template>
 
   <div class="home">
-    <h1 class="title">
-          <div id="titleFont">Cardio Training</div>
-        </h1>
-        
-          <div id="subtitleFont">Running</div>
+    <section class="hero is-black">
+  <div class="hero-body">
+    <p class="title">
+      Cardio Training
+    </p>
+    <p class="subtitle">
+      Running
+    </p>
+  </div>
+</section>
  <div><p style="float: left;"><img src="https://thebridge.in/wp-content/uploads/2020/10/How-can-running-and-strength-training-combined-lead-to-weight-loss.jpg" height="325px" width="616px"></p>
     <article class="message is-black">
       <div class="message-header" :style="` font-size: 98`" >

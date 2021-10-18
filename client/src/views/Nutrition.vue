@@ -1,19 +1,16 @@
 <template>
   <div class="nutrition">
-    <h1 class="title">
-          <div id="titleFont">Nutrition</div>
-        </h1>
-        
-          <div id="subtitleFont">the hard part</div>
-        <article class="message is-black">
-            <div class="message-header" :style="` font-size: 98`" >
-              <div class="messagehead">
-              <div id = "counter">
-                Nutrition is not easy
-              </div>
-              </div>
-            </div>
-        </article>
+    <section class="hero is-black">
+  <div class="hero-body">
+    <p class="title">
+      Nutrition
+    </p>
+    <p class="subtitle">
+    the hard part
+    </p>
+  </div>
+</section>
+
         <div class="message-body">
               Having a great nutrition while hitting the gym requires a lot of self discipline.
               <p>So How Do I eat a healthy diet?</p>

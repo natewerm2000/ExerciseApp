@@ -1,11 +1,16 @@
 <template>
 
   <div class="home">
-    <h1 class="title">
-          <div id="titleFont">Cardio Training</div>
-        </h1>
-        
-          <div id="subtitleFont">Bicycle</div>
+    <section class="hero is-black">
+  <div class="hero-body">
+    <p class="title">
+      Cardio Training
+    </p>
+    <p class="subtitle">
+      Bicycles
+    </p>
+  </div>
+</section>
  <div><p style="float: left;"><img src="https://www.montaguebikes.com/wp-content/uploads/2015/11/BOSTON-DC-Open-Final.jpg" height="325px" width="616px"></p>
     <article class="message is-black">
       <div class="message-header" :style="` font-size: 98`" >

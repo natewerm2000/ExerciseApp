@@ -1,10 +1,15 @@
 <template>
   <div class="home">
-    <h1 class="title">
-          <div id="titleFont">Universal Fitness</div>
-        </h1>
-        
-          <div id="subtitleFont">all around exercise</div>
+    <section class="hero is-black">
+  <div class="hero-body">
+    <p class="title">
+      Universal Fitness
+    </p>
+    <p class="subtitle">
+      all around exercise
+    </p>
+  </div>
+</section>
        
 
 <div class="box">

@@ -1,10 +1,16 @@
 <template>
 
   <div class="home">
-          <h1 class="title">
-          <div id="titleFont">Universal Fitness</div>
-        </h1>
-          <div id="subtitleFont">Reps & Sets Counter</div>
+          <section class="hero is-black " >
+  <div class="hero-body">
+    <p class="title">
+      Resistance Training
+    </p>
+    <p class="subtitle">
+      Reps and Sets counter
+    </p>
+  </div>
+</section>
       <div class="message-body">
               Enter your reps and sets
 

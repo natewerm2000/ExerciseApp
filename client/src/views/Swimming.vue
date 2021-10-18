@@ -1,11 +1,16 @@
 <template>
 
-  <div class="home">
-    <h1 class="title">
-          <div id="titleFont">Cardio Training</div>
-        </h1>
-        
-          <div id="subtitleFont">Swimming</div>
+  <div class="swimming">
+    <section class="hero is-black">
+  <div class="hero-body">
+    <p class="title">
+      Universal Fitness
+    </p>
+    <p class="subtitle">
+      all around exercise
+    </p>
+  </div>
+</section>
  <div><p style="float: left;"><img src="https://img.olympicchannel.com/images/image/private/t_16-9_3200/primary/piultz6nngltq541xmju" height="325px" width="616px"></p>
     <article class="message is-black">
       <div class="message-header" :style="` font-size: 98`" >

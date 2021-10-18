@@ -1,7 +1,16 @@
 <template>
 
   <form class="section" @submit.prevent="login()">
-      
+      <section class="hero is-black">
+  <div class="hero-body">
+    <p class="title">
+      Universal Fitness
+    </p>
+    <p class="subtitle">
+      login
+    </p>
+  </div>
+</section>
       <p class="subtitle has-text-black">Please login to enter Universal Fitness</p>
 <div class="box">
   <div class="box">
@@ -12,7 +21,6 @@
       <div class="field">
        
             <input class="input" type="text" placeholder="Email" v-model="email">
-            
         </div>
         <div class="field">
             <input class="input" type="password" placeholder="Password" v-model="password">

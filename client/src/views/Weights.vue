@@ -1,11 +1,16 @@
 <template>
 
-  <div class="home">
-    <h1 class="title">
-          <div id="titleFont">Resistance Training</div>
-        </h1>
-        
-          <div id="subtitleFont">Weights</div>
+  <div class="about">
+    <section class="hero is-black">
+  <div class="hero-body">
+    <p class="title">
+      Universal Fitness
+    </p>
+    <p class="subtitle">
+      all around exercise
+    </p>
+  </div>
+</section>
 <div><p style="float: left;"><img src="https://yorkbarbell.com/wp-content/uploads/2018/06/25-2.jpg" height="325px" width="616px"></p>
     <article class="message is-black">
       <div class="message-header" :style="` font-size: 98`" >

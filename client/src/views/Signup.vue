@@ -2,6 +2,16 @@
 
   <form class="section" @submit.prevent="signup()">
       
+    <section class="hero is-black">
+  <div class="hero-body">
+    <p class="title">
+      Universal Fitness
+    </p>
+    <p class="subtitle">
+      sign up
+    </p>
+  </div>
+</section>
       <p class="subtitle has-text-black">Please login to enter Universal Fitness</p>
 <div class="box">
   <div class="box">

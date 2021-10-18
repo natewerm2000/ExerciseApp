@@ -1,10 +1,16 @@
 <template>
 
   <div class="home">
-          <h1 class="title">
-          <div id="titleFont">Universal Fitness</div>
-        </h1>
-          <div id="subtitleFont">report an issue</div>
+         <section class="hero is-black">
+  <div class="hero-body">
+    <p class="title">
+      Universal Fitness
+    </p>
+    <p class="subtitle">
+      report an issue
+    </p>
+  </div>
+</section>
 
      <div class="message-body">
               <p>Submit a form:</p>

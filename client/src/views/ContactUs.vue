@@ -1,10 +1,16 @@
 <template>
 
   <div class="home">
-          <h1 class="title">
-          <div id="titleFont">Universal Fitness</div>
-        </h1>
-          <div id="subtitleFont">Contact Us</div>
+          <section class="hero is-black">
+  <div class="hero-body">
+    <p class="title">
+      Universal Fitness
+    </p>
+    <p class="subtitle">
+      Contact Us
+    </p>
+  </div>
+</section>
 
      <div class="message-body">
               <p>Email: alexandn7@newpaltz.edu</p>
