@@ -10,39 +10,16 @@
   <div class="title has-text-grey is-5">Please enter the information required below</div>
 </div>
       <div class="field">
-        <p class="control has-icons-left has-icons-right">
             <input class="input" type="text" placeholder="Email" v-model="email">
-            <span class="icon is-small is-left">
-            <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-            <i class="fas fa-check"></i>
-            </span>
-        </p>
         </div>
         <div class="field">
-        <p class="control has-icons-left">
             <input class="input" type="username" placeholder="Username" v-model="password">
-            <span class="icon is-small is-left">
-            <i class="fas fa-lock"></i>
-            </span>
-        </p>
         </div>
         <div class="field">
-        <p class="control has-icons-left">
-            <input class="input" type="password" placeholder="Password" v-model="password">
-            <span class="icon is-small is-left">
-            <i class="fas fa-lock"></i>
-            </span>
-        </p>
+                   <input class="input" type="password" placeholder="Password" v-model="password">   
         </div>
         <div class="field">
-        <p class="control has-icons-left">
             <input class="input" type="confirmpassword" placeholder="ConfirmPassword" v-model="password">
-            <span class="icon is-small is-left">
-            <i class="fas fa-lock"></i>
-            </span>
-        </p>
         </div>
         <div class="field">
              
@@ -50,7 +27,6 @@
             <button class="button is-black">
             Sign up!
             </button>
-            
         </p>
         
         </div>

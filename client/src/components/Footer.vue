@@ -4,6 +4,7 @@
             <p>
                 <em>Universal Fitness</em> by <b>Nathaniel Alexander</b>
             </p>
+            <p>Placeholder for more information on footer</p>
         </div>
     </footer>
 </template>

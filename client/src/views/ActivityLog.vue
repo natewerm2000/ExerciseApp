@@ -38,7 +38,13 @@
               <input class="input is-large" type="calories" placeholder="calories burned">
             </div>
           </div>
-
+         
+        <p class="control">
+            <button class="button is-black">
+            Post Activity
+            </button>
+        </p>
+        
 
 </div>
  
