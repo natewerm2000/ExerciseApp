@@ -1,14 +1,14 @@
 <template>
     <div class="buttons" v-if="!Session.user">
-          <a class="button is-primary">
+          <router-link class="button is-dark is-tab"  to="/signup" active-class="is-active" @click="register">
             <strong>Sign up</strong>
-          </a>
-          <a class="button is-light" @click="login">
-            Log in
-          </a>
+        </router-link>
+        <router-link class="button is-light is-tab"  to="/login" active-class="is-active" @click="login">
+            Login
+        </router-link>
     </div>
     <div v-else>
-        Hello {{name}} 
+        Welcome to Universal Fitness {{name}} !
     </div>
 </template>
 
@@ -25,7 +25,11 @@ export default {
             this.$router.push('/login');
             //this.Session.Login();
         }
+        
     },
+    signup(){
+            this.$router.pusher('/signup')
+        },
     computed:{
         name(){
             return this.Session.user.FirstName + ' ' + this.Session.user.LastName;

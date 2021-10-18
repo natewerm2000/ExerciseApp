@@ -1,4 +1,4 @@
 module.exports = {
     //options...
-    outputDir:"../docs"
+    outputDir:"../NoFramework"
 }

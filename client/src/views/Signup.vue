@@ -1,13 +1,13 @@
 <template>
 
-  <form class="section" @submit.prevent="login()">
+  <form class="section" @submit.prevent="signup()">
       
       <p class="subtitle has-text-black">Please login to enter Universal Fitness</p>
 <div class="box">
   <div class="box">
     <img src="https://cdn.dribbble.com/users/541480/screenshots/10860012/jo_dribbble_exercise_takeover_logo-grid_4x.jpg" width = "200px">
   </div>
-  <div class="title has-text-grey is-5">Please enter your email and password.</div>
+  <div class="title has-text-grey is-5">Please enter the information required below</div>
 </div>
       <div class="field">
         <p class="control has-icons-left has-icons-right">
@@ -29,13 +29,10 @@
         </p>
         </div>
         <div class="field">
-             <label class="checkbox" style="margin: 20px;">
-        <input type="checkbox">
-          Remember me
-      </label>
+             
         <p class="control">
             <button class="button is-black">
-            Login
+            Sign up!
             </button>
             
         </p>
