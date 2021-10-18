@@ -54,12 +54,19 @@
                   </div>
                 </div>
                  <div class = "message-body">
-          Fresh fruits and vegetables are endowed with almost all of the nutritional principles that our body requires.
-          The health beneits that fruits and veggies give are enournmous, with an excellent source of vitamins, minerals, antioxidants, and dietary fiber.
-          Vegetables are low in calories and fats but contains a great amount of vitamins and minerals.
-          Green and yellow vegetables are rich in calcium, magnesium, potassium, iron, beta-carotene, vitamin B-complex, vitamin C, vitamin A, and vitamin K.
-          Including fruits and veggies in your servings per meal is an excellent start in achieving great nutrition.
-        
+          Are you getting enough protein in your diet? While you may watch your calories, 
+          sugar and salt intake, you should also make sure you are ingesting enough protein. 
+          It plays a key role in the creation and maintenance of every cell in our bodies. It fuels our cells and powers our bodies.
+          <p>why do we need protein?</p>
+          1. Build. Protein is an important building block of bones, muscles, cartilage and skin. In fact, your hair and nails are comprised mostly of protein.
+
+2. Repair. Your body uses it to build and repair tissue.
+
+3. Oxygenate. Red blood cells contain a protein compound that carries oxygen throughout the body. This helps supply your entire body with the nutrients it needs.
+
+4. Digest. About half the dietary protein that you consume each day goes into making enzymes, which aids in digesting food, and making new cells and body chemicals.
+
+5. Regulate. Protein plays an important role in hormone regulation, especially during the transformation and development of cells during puberty.
                 </div>
                 </article>
                 </div>
@@ -73,11 +80,9 @@
                   </div>
                 </div>
                 <div class = "message-body">
-          Fresh fruits and vegetables are endowed with almost all of the nutritional principles that our body requires.
-          The health beneits that fruits and veggies give are enournmous, with an excellent source of vitamins, minerals, antioxidants, and dietary fiber.
-          Vegetables are low in calories and fats but contains a great amount of vitamins and minerals.
-          Green and yellow vegetables are rich in calcium, magnesium, potassium, iron, beta-carotene, vitamin B-complex, vitamin C, vitamin A, and vitamin K.
-          Including fruits and veggies in your servings per meal is an excellent start in achieving great nutrition.
+          Eating more whole grains is an easy way to make your diet healthier. Whole grains are packed 
+          with nutrients including protein, fiber, B vitamins, antioxidants, and trace minerals (iron, zinc, copper, and magnesium). A diet rich in whole grains has been shown to reduce the risk of heart disease, type 2 diabetes, obesity, and some forms of cancer. Whole-grain diets
+           can also improve bowel health by helping to maintain regular bowel movements and promote growth of healthy bacteria in the colon.
           
                  </div>
                 </article>
@@ -91,11 +96,10 @@
                   </div>
                 </div>
                <div class = "message-body">
-          Fresh fruits and vegetables are endowed with almost all of the nutritional principles that our body requires.
-          The health beneits that fruits and veggies give are enournmous, with an excellent source of vitamins, minerals, antioxidants, and dietary fiber.
-          Vegetables are low in calories and fats but contains a great amount of vitamins and minerals.
-          Green and yellow vegetables are rich in calcium, magnesium, potassium, iron, beta-carotene, vitamin B-complex, vitamin C, vitamin A, and vitamin K.
-          Including fruits and veggies in your servings per meal is an excellent start in achieving great nutrition.
+          You need a small amount of fat in your diet for healthy functioning. 
+          Oils and fats supply calories and essential fats and help your body absorb fat-soluble vitamins such as A, D, E
+           and K. The type of fat is just as important for health as the total amount of fat consumed. That's why it's important to choose healthier unsaturated fats.
+           Eating too much and the wrong kinds of fats, such as saturated and trans fats, may raise unhealthy LDL cholesterol and lower healthy HDL cholesterol. 
         </div>
                 </article>
   </div>
