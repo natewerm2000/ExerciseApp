@@ -1,5 +1,5 @@
 module.exports = {
     //options...
-    outputDir:"../NoFramework",
-    publicPath: "/NoFramework/"
+    outputDir:"../docs",
+    publicPath: "/docs/"
 }
