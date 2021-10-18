@@ -1,6 +1,6 @@
 <template>
     <div class="buttons" v-if="!Session.user">
-          <router-link class="button is-dark is-tab"  to="/signup" active-class="is-active" @click="register">
+          <router-link class="button is-dark is-tab"  to="/signup" active-class="is-active" @click="signup">
             <strong>Sign up</strong>
         </router-link>
         <router-link class="button is-light is-tab"  to="/login" active-class="is-active" @click="login">

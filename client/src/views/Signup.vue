@@ -22,7 +22,23 @@
         </div>
         <div class="field">
         <p class="control has-icons-left">
+            <input class="input" type="username" placeholder="Username" v-model="password">
+            <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+            </span>
+        </p>
+        </div>
+        <div class="field">
+        <p class="control has-icons-left">
             <input class="input" type="password" placeholder="Password" v-model="password">
+            <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+            </span>
+        </p>
+        </div>
+        <div class="field">
+        <p class="control has-icons-left">
+            <input class="input" type="confirmpassword" placeholder="ConfirmPassword" v-model="password">
             <span class="icon is-small is-left">
             <i class="fas fa-lock"></i>
             </span>

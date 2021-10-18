@@ -61,6 +61,9 @@
     </div>
     <p class="subtitle has-text-black">Social Feed</p>
       <p>Posts from you and your friends on fitness and nutrition...</p>
+       <div class="post" v-for="p in posts" :key="p.src">
+            <Post :post="p"/>
+          </div>
       <div class="column is-8 is-offset-2">
       </div>
  </div>
@@ -178,13 +181,14 @@ text-transform: uppercase;
                         
                         </style>
 <script>
-// @ is an alias to /src
-
+import Post from '../components/Post.vue';
+import session from "../services/session";
+import { GetWall } from "../services/posts";
 
 export default {
-  name: 'Home',
-  components: {
-    
-  }
+  components: { Post },
+    data: ()=> ({
+      posts: GetWall(session.user.handle)
+    })
 }
 </script>

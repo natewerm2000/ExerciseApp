@@ -46,6 +46,7 @@
                   </div>
                   </div>
                 </div>
+                <div class="message-body">
                  <p>Why Cardio?</p>
               <p>Cardio targets almost every muscle in the body, which is a good method of fat loss.
                 Cardio exercise can also strengthen your heart and lungs, which can prevent many future born illnesses.
@@ -54,6 +55,7 @@
                 Are you new to cardio? Great we will start you off easy with many tips and of course motivations!
                 After many few cardio sessions with us, going up those flights of stairs at work will feel like a breeze!
                 </p>
+                </div>
                 </article>
                 </div>
                 <div style="clear: left;"></div><p style="float: left;"><img src="https://cdn.shopify.com/s/files/1/1734/8163/articles/ResisTrainBen_blog.png?v=1562711399" width="600px" height="1200px"></p>
@@ -65,6 +67,7 @@
                   </div>
                   </div>
                 </div>
+                <div class="message-body">
                 <p>Looking for gains or just to slim down?</p>
                 <p>Resistance training can mean many things to people, lifting weights and pushing to your muscles capacity, or just a few simple push-ups.</p>
                 <p>The amount of resistance related workouts are possibly endless, it all depends on what you are looking for in results and in a workout.</p>
@@ -73,6 +76,7 @@
                   with a large amount of resources and information on specific workouts and its target areas. We will tell you whats best for what you are looking for 
                   in results.
                 </p>
+                </div>
                 </article>
                 <div style="clear: left;"></div><p style="float: left;"><img src="https://static01.nyt.com/images/2019/02/28/opinion/28yun/28yun-superJumbo.jpg" width="600px" height="200px"></p>
               <article class="message is-black">
@@ -83,6 +87,7 @@
                   </div>
                   </div>
                 </div>
+                <div class="message-body">
                 <p>Whats so important about nutrition if I am working out?</p>
                 <p>Sure working out five days a week with noticeable improvements is awesome,
                   but what about your overall nutrition? Cardio and Resistance training are great contributors to a healthy body
@@ -90,6 +95,7 @@
                   Helping maintaining a healthy body weight and an overall wellbeing. Good nutrition is tough, it requires a lot of knowledge and healthy habits.
                   We can help you make this haelthy choices and provide you with a lot of nutritional information to help you provide your body the best nourishment.
                 </p>
+                </div>
                 </article>
   </div>
   
