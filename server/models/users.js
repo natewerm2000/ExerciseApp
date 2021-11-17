@@ -5,6 +5,7 @@ const { ObjectId } = require('bson');
 const { client } = require('./mongo');
 
 const collection = client.db(process.env.MONGO_DB).collection('users');
+module.exports.collection = collection;
 
 const list = [
     { 
@@ -49,9 +50,9 @@ const list = [
 
 module.exports.GetAll = function GetAll() { return collection.find().toArray() ; }
 
-module.exports.Get = user_id => collection.findOne({_id: user_id}) 
+module.exports.Get = user_id => collection.findOne({_id: new ObjectId(user_id)}) 
 
-module.exports.GetByHandle = (handle) => ({ ...collection.findOne({ handle }), password: undefined });
+module.exports.GetByHandle = (handle) => collection.findOne({ handle }).then(x=> ({ ...x, password: undefined }));
 
 module.exports.Add = async function Add(user) {
     if(!user.firstName){
@@ -76,7 +77,7 @@ module.exports.Add = async function Add(user) {
 module.exports.Update = async function Update(user_id, user) {
 
     const results = await collection.findOneAndUpdate(
-        {_id: ObjectId(user_id) }, 
+        {_id: new ObjectId(user_id) }, 
         { $set: user },
         { returnDocument: 'after'}
     );
@@ -85,10 +86,10 @@ module.exports.Update = async function Update(user_id, user) {
     return { ...results.value, password: undefined };
 }
 
-module.exports.Delete = function Delete(user_id) {
-    const user = list[user_id];
-    list.splice(user_id, 1);
-    return user;
+module.exports.Delete = async function Delete(user_id) {
+    const results = await collection.findOneAndDelete({_id: new ObjectId(user_id) })
+
+    return results.value;
 }
 
 module.exports.Login = async function Login(handle, password){

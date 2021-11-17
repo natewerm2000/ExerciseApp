@@ -27,11 +27,11 @@
         The uses of dumbbells are almost infinite, ranging from shoulder raises, chest flyers, and bicep curls.
         Dumbbells can also add resistance to normal commpound movement workouts, like squats and chest presses.
         <p>Workouts good for dumbbells:</p>
-        <p>Goblet Squats</p>
-        <p>Bench Press</p>
-        <p>Shoulder Press</p>
-        <p>Chest/Rear Deltoid Flys</p>
-        <p>and many more!</p>
+        Goblet Squats, 
+        Bench Press, 
+        Shoulder Press, 
+        Chest/Rear Deltoid Flys,
+        and many more!
       </div>
       </article>
       </div>
@@ -50,13 +50,13 @@
           But for raw strength, you’ll want to incorporate barbell training into your routine.
           If you are looking to gain a lot of overall muscle on your body or even become a body builder, this freeweight is for you.
           <p>Workouts good for barbells:</p>
-          <p>Lunge</p>
-          <p>Overhead Press</p>
-          <p>Bent-Over Row</p>
-          <p>Bench Press</p>
-          <p>Back Squat</p>
-          <p>Deadlife</p>
-          <p>Power Clean</p>
+          lunge, 
+          Overhead Press, 
+          Bent-Over Row, 
+          Bench Press, 
+          Back Squat, 
+          Deadlife, and
+          Power Clean.
         </div>
         </article>
           <div style="clear: left;"></div><p style="float: left;"><img src="https://s.yimg.com/aah/fitnessgiant/vtx-rubber-olympic-weight-plate-set-455lbs-130.png" width="616" height="325"></p>
@@ -72,12 +72,12 @@
           If you want to add weight to your barbells to get stronger, weight plates are the way to go.
           Weight plates can simply be used by sliding it on your barbell set to add more weight, or they can even be used as compound free weights.
           <p>These freeweight exercises include:</p>
-          <p>Lateral Raise</p>
-          <p>Front Shoulder Raise</p>
-          <p>Plate Push-Up</p>
-          <p>Overhead Press</p>
-          <p>Side Bench</p>
-          <p>Squat Reach</p>
+          Lateral Raise, 
+          Front Shoulder Raise, 
+          Plate Push-Up, 
+          Overhead Press, 
+          Side Bench, and
+          Squat Reach.
 
         </div>
         </article>
@@ -97,11 +97,11 @@
           If you arent using medicine balls
           for a safe recovery after an injury then there are many workouts this free weight is good for!
           <p>Workouts include:</p>
-          <p>Side to side slams</p>
-          <p>Ball twists</p>
-          <p>Ball slams</p>
-          <p>Squat throws</p>
-          <p>Wall ball</p>
+          Side to side slams, 
+          Ball twists, 
+          Ball slams, 
+          Squat throws, and
+          Wall ball.
         </div>
         </article>
         <div style="clear: left;"></div><p style="float: left;"><img src="https://www.workoutz.com/media/catalog/product/cache/1/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/s/a/sandbellyellow.jpg" width="616" height="325"></p>
@@ -122,11 +122,11 @@
             step forward in a lunging motion and twist to one side. Triggering a lot of muslces in a lot of central muslcles, especially your core.
             One safety benefit is also the sandbag being just sand, it would definitely hurt less if you drop it on your toe, atleast compared to a normal freeweight.
             <p>Some great workouts are:</p>
-            <p>Woodchop</p>
-            <p>Bent-over Row</p>
-            <p>Skater</p>
-            <p>Russian twist</p>
-            <p>Hip swing</p>
+            Woodchop, 
+            Bent-over Row, 
+            Skater, 
+            Russian twist, and
+            Hip swing.
           </div>
           </article>
           <div style="clear: left;"></div><p style="float: left;"><img src="https://www.hamptonfit.com/wp-content/uploads/2014/04/HKB-50-1.jpg" width="616" height="325"></p>
@@ -144,12 +144,12 @@
              Kettlebells are great for full body workouts, all you have to do is incorporate the strength of your hands to hold the kettlebell.
              Grips strength is definitely a major benefit in using kettlebells.
              <p>Some workouts include:</p>
-             <p>Goblet Squat</p>
-             <p>One-arm row</p>
-             <p>One-arm press</p>
-             <p>Shoulder halo</p>
-             <p>Around the leg pass</p>
-             <p>Chest-loaded swing</p>
+             Goblet Squat
+             One-arm row, 
+             One-arm press, 
+             Shoulder halo, 
+             Around the leg pass, and
+            Chest-loaded swing.
             </div>
           </article>
         
@@ -157,54 +157,9 @@
   
   
 </template>
-<style> .message-body{
-              font-family: "Arial Black", Gadget, sans-serif;
-              font-size: 20px;
-              letter-spacing: 2px;
-              word-spacing: 2px;
-              color: #000000;
-              font-weight: normal;
-              font-style: normal;
-              font-variant: normal;
-                          }
-                          h1{text-align: center;}
-  p{text-align: center;}
-  div{text-align: center;}
-  #titleFont {
-          font-family: "Arial Black", Gadget, sans-serif;
-          font-size: 90px;
-          letter-spacing: 2px;
-          word-spacing: 2px;
-          color: #000000;
-          font-weight: normal;
-          text-decoration: underline solid rgb(68, 68, 68);
-          font-style: normal;
-          font-variant: normal;
-          text-transform: uppercase;
-          }
-          #subtitleFont {
-font-family: "Arial Black", Gadget, sans-serif;
-font-size: 28px;
-letter-spacing: 2px;
-word-spacing: 2px;
-color: #000000;
-font-weight: normal;
-text-decoration: none solid rgb(68, 68, 68);
-font-style: normal;
-font-variant: normal;
-text-transform: uppercase;
+<style>
+                          
 
-}.message-body{
-  font-family: "Arial Black", Gadget, sans-serif;
-              font-size: 20px;
-              letter-spacing: 2px;
-              word-spacing: 2px;
-              color: #000000;
-              font-weight: normal;
-              font-style: normal;
-              font-variant: normal;
- 
-}
                         
                         </style>
 <script>
