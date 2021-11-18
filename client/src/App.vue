@@ -18,10 +18,12 @@
 <script> 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Messages from './components/Messages.vue';
 export default {
   components: {
     Nav,
-    Footer
+    Footer,
+    Messages
   }
 } 
 </script>

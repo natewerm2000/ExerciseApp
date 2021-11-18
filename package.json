@@ -8,17 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/natewerm2000/ExerciseApp"
+    "url": "git+https://github.com/natewerm2000/ExerciseApp.git"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "4.17.1",
     "mongodb": "^4.1.4",
-    "dotenv": "^10.0.0",
     "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
     "lodash": "^4.17.21"
-    
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
