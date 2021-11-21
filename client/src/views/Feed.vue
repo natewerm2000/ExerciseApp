@@ -1,7 +1,23 @@
 <template>
+
   <div class="section">
-      <h1 class="title"> Feed Page </h1>
-      
+      <section class="hero is-black">
+  <div class="hero-body">
+    <p class="title">
+      Universal Fitness
+    </p>
+    <p class="subtitle">
+      all around exercise
+    </p>
+  </div>
+
+      </section>
+      <div class="box">
+  <div class="box">
+    <img src="https://cdn.dribbble.com/users/541480/screenshots/10860012/jo_dribbble_exercise_takeover_logo-grid_4x.jpg" width = "200px">
+  </div>
+  <div class="title has-text-grey is-5">Feed of you and your friends</div>
+</div>
       <div class="columns">
 
           <!--

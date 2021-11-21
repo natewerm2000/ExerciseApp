@@ -21,9 +21,11 @@
         </p>
       </div>
     </div>
-
+<div class= "Content">
+ <b>Workout/Activity:</b> {{post.activity}}
+  </div>
     <div class="content">
-      {{post.caption}}
+     <b>Description:</b> {{post.caption}}
     </div>
   </div>
     <footer class="card-footer">

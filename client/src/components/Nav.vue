@@ -58,12 +58,6 @@
           <router-link class = "navbar-item is-tab" to = "/weights" active-class="is-active">
             Weights
           </router-link>
-          <router-link class = "navbar-item is-tab" to = "/counter" active-class="is-active">
-            Reps/Sets Tracker
-          </router-link>
-         <router-link class = "navbar-item is-tab" to = "/stopwatch" active-class="is-active">
-            Stopwatch
-         </router-link>
         </div>
       </div>
        <div class="navbar-item has-dropdown is-hoverable">
@@ -81,9 +75,6 @@
           <router-link class = "navbar-item is-tab" to = "/swimming" active-class="is-active">
             Swimming
           </router-link>
-           <router-link class = "navbar-item is-tab" to = "/stopwatch" active-class="is-active">
-            Stopwatch
-           </router-link>
         </div>
       </div>
        <div class="navbar-item has-dropdown is-hoverable">

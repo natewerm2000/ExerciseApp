@@ -7,8 +7,8 @@
             Login
         </router-link>
     </div>
-    <div v-else>
-        Welcome to Universal Fitness {{name}} !
+<div v-else>
+        
     </div>
 </template>
 
