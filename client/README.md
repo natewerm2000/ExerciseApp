@@ -1,3 +1,6 @@
+
+#General Information about app
+
 # client
 
 ## Project setup
