@@ -35,7 +35,7 @@
           <router-link class = "navbar-item is-tab" to = "/social" active-class="is-active">
             Social
           </router-link>
-          <router-link class = "navbar-item is-tab" to = "/friends" active-class="is-active">
+          <router-link class = "navbar-item is-tab" to = "/feed" active-class="is-active">
             Friends and Feed
           </router-link>
           <router-link class = "navbar-item is-tab" to = "/activitylog" active-class="is-active">

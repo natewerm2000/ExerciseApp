@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Session from '../services/session'
-import Home from '../views/Home.vue'
-import Feed from '../views/Feed.vue'
+import Session from '../services/session';
+import Home from '../views/Home.vue';
+import Feed from '../views/Feed.vue';
 
 
 const routes = [
@@ -120,9 +120,9 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   if(to.meta.requiresLogin && !Session.user) {
-    next('/login')
+    next('/login');
   } else {
-    next()
+    next();
   }
 })
 

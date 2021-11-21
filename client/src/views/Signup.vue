@@ -85,6 +85,7 @@ export default {
     }),
     methods: {
         login(){
+            // @ts-ignore
             this.Session.Login(this.email, this.password);
         }
     }
