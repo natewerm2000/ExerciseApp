@@ -18,7 +18,7 @@
 <p class="subtitle has-text-black">Universal Fitness Profile</p>
 <div class="box">
   <div class="box">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk5pgY_bJYiNCunOgfuzvERIOA1LewXg5w6Q&usqp=CAU" width = "200px">
+    <img src="post.user.pic" alt="Placeholder image">
   </div>
   <div class="title has-text-grey is-5">edit information</div>
 </div>
@@ -27,6 +27,7 @@
           <div class="control">
             <input class="input is-large" type="Name" placeholder="Name" autofocus=""> Nathaniel Alexander
           </div>
+          
         </div>
         <div class="field">
           <div class="control">
@@ -166,13 +167,19 @@ text-transform: uppercase;
                         
                         </style>
 <script>
-// @ is an alias to /src
-
-
 export default {
-  name: 'Home',
-  components: {
-    
-  }
+    props: {
+        post: Object
+    },
+    computed: {
+        prettyDate(){
+            if(this.post.time && this.post.time.toDateString){
+                return this.post.time.toDateString()
+            }else{
+                return 'Never'
+            }
+            
+        }
+    }
 }
 </script>

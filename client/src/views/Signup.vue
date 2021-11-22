@@ -19,25 +19,41 @@
   </div>
   <div class="title has-text-grey is-5">Please enter the information required below</div>
 </div>
-      <div class="field">
-            <input class="input" type="text" placeholder="Email" v-model="email">
-        </div>
-        <div class="field">
-            <input class="input" type="username" placeholder="Username" v-model="password">
-        </div>
-        <div class="field">
-                   <input class="input" type="password" placeholder="Password" v-model="password">   
-        </div>
-        <div class="field">
-            <input class="input" type="confirmpassword" placeholder="ConfirmPassword" v-model="password">
-        </div>
-        <div class="field">
-             
-        <p class="control">
-            <button class="button is-black">
-            Sign up!
-            </button>
-        </p>
+       <div class="field">
+                        <label class="label">Username</label>
+                        <div class="control has-icons-left has-icons-right">
+                          <input class="input" type="text" v-model="username">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                          </span>
+                        </div>
+                        
+                      </div>
+
+                      <div class="field">
+                        <label class="label">Password</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="password" v-model="password">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+                      
+                      <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left">
+                          <input class="input" type="email" v-model="email">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <div class="field is-grouped">
+                        <div class="control">
+                          <button class="button is-info">Submit</button>
+                        </div>
         
         </div>
   </form>
