@@ -3,56 +3,17 @@ const Users = require( "./users");
 const { ObjectId } = require('bson');
 const { client } = require('./mongo');
 
-const collection = client.db(process.env.MONGO_DB).collection('posts');
+const collection = client.db(process.env.MONGO_DB).collection('exercise');
 module.exports.collection = collection;
 
 const list = [
     { 
-        src: "https://cdn.kingsbox.com/assets/media/products/bars-plates/sets/X-104-1020--kids-home-gym-set--0.jpg",
-        alt: "Placeholder image",
-        topic: "Gym equipment",
-        activity: "Weight lifting related",
+        date: "December 2nd 2019",
+        exercise: "running",
         caption: "New Gymset finally came in the mail #pumped",
-        time: Date(),
-        user_handle: "@llama",
-        isPublic: true,
-    },
-    { 
-        src: "https://www.bodybuilding.com/images/2016/june/arm-workouts-for-men-5-biceps-blasts-v2-1-700xh.jpg",
-        alt: "Placeholder image",
-        activity: "Motivation",
-        caption: "We all need to reach our dreams, its what we live for. If there is no success then what is the point? btw that pic isnt me but I am going to look like that one day lol #success",
-        time: Date(),
         user_handle: "@natewerm2000",
         isPublic: true,
-    },
-    { 
-        src: "https://www.active.com/Assets/Running/580/New+England+Trail+Running+Guide/Northfield+Mountain+Trail.jpg",
-        alt: "Placeholder image",
-        activity: "Run",
-        caption: "Ran 5 miles today! I feel such a great improvement to my stamina its crazy what a run can do to you.",
         time: Date(),
-        user_handle: "@jp",
-        isPublic: true,
-    },
-    { 
-        src: "https://cdn1.coachmag.co.uk/sites/coachmag/files/2019/07/aftershokz-aeropex-wireless-bluetooth-headphones-male.jpg",
-        alt: "Placeholder image",
-        activity: "Run",
-        caption: "Running with music makes the workout so much enjoyable!",
-        time: Date(),
-        user_handle: "@rapper",
-        isPublic: true,
-    },
-
-    { 
-        src: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/enduro-mountain-biking-in-a-pristine-forest-royalty-free-image-1603405657.jpg?crop=1.00xw:0.753xh;0,0.247xh&resize=1200:*",
-        alt: "Placeholder image",
-        activity: "Biking",
-        caption: "Biked the mountains this moring, starting the day feeling #energized.",
-        time: Date(),
-        user_handle: "@meme",
-        isPublic: true,
     },
     
 ];
@@ -82,13 +43,13 @@ module.exports.GetFeed_ = function GetFeed_(handle) {
     const query = Users.collection.aggregate([
         {$match: { handle }},
         {"$lookup" : {
-            from: "posts",
+            from: "exercise",
             localField: 'following.handle',
             foreignField: 'user_handle',
-            as: 'posts'
+            as: 'exercise'
         }},
-        {$unwind: '$posts'},
-        {$replaceRoot: { newRoot: "$posts" } },
+        {$unwind: '$exercise'},
+        {$replaceRoot: { newRoot: "$exercise" } },
     ].concat(addOwnerPipeline));
     return query.toArray();
 

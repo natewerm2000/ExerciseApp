@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Session from '../services/session';
 import Home from '../views/Home.vue';
 import Feed from '../views/Feed.vue';
+import Profile from '../views/Profile.vue';
+import ExercisePlans from '../views/ExercisePlans.vue';
 
 
 const routes = [
@@ -54,7 +56,8 @@ const routes = [
   {
     path: '/exerciseplans',
     name: 'Exercise Plans',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ExercisePlans.vue')
+    component: ExercisePlans,
+    meta: { requiresLogin: true}
   },
   {
     path: '/friends',
@@ -69,7 +72,8 @@ const routes = [
   {
     path: '/profile',
     name: 'Profile',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Profile.vue')
+    component: Profile,
+    meta: { requiresLogin: true}
   },
   {
     path: '/progress',

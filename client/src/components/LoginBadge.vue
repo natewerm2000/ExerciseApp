@@ -8,7 +8,9 @@
         </router-link>
     </div>
 <div v-else>
-        
+
+        Hello {{name}} 
+   
     </div>
 </template>
 
@@ -25,14 +27,10 @@ export default {
             this.$router.push('/login');
             //this.Session.Login();
         }
-        
     },
-    signup(){
-            this.$router.pusher('/signup')
-        },
     computed:{
         name(){
-            return this.Session.user.FirstName + ' ' + this.Session.user.LastName;
+            return this.Session.user.firstName + ' ' + this.Session.user.lastName;
         }
     }
 }

@@ -1,5 +1,4 @@
-/* B"H
-*/
+
 const bcrypt = require('bcrypt');
 const { ObjectId } = require('bson');
 const { client } = require('./mongo');
@@ -15,9 +14,7 @@ const list = [
         pic: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Nate_Huffman.jpg/220px-Nate_Huffman.jpg',
         password: 'me',
         isAdmin: true,
-        emails: [
-            "alexandn7@newpaltz.edu"
-        ],
+        email: 'alexandn7@newpaltz.edu',
         following: [ { handle: '@llama', isApproved: true }, { handle: '@jp', isApproved: true },{ handle: '@rapper', isApproved: true }, ],
         get name(){ return this.firstName + ' ' + this.lastName },
     },
@@ -28,9 +25,8 @@ const list = [
         pic: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/34c0ce00-4b2b-4113-ae46-282dc56aae1c/ddsp0g2-099e51de-2479-48b4-8226-87ffd2a00e6d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM0YzBjZTAwLTRiMmItNDExMy1hZTQ2LTI4MmRjNTZhYWUxY1wvZGRzcDBnMi0wOTllNTFkZS0yNDc5LTQ4YjQtODIyNi04N2ZmZDJhMDBlNmQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.X8Vy0corb6ErJP2XS0umXynUUIWY1xMgBHGvt47VfDw',
         password: 'gains',
         isAdmin: true,
-        emails: [
-            "JPWheyProtein@newpaltz.edu"
-        ],
+        email: 
+            'JPWheyProtein@newpaltz.edu',
         following: [ { handle: '@natewerm2000', isApproved: true }, ],
     },
     { 
@@ -40,9 +36,9 @@ const list = [
         pic: 'https://steamuserimages-a.akamaihd.net/ugc/1770448465120811876/79B6C0FEFCBDB2F14E10B35A796EB4B4B0C47E39/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
         password: 'palooza',
         isAdmin: true,
-        emails: [
-            "llamaLover@newpaltz.edu"
-        ],
+        email: 
+            'llamaLover@newpaltz.edu'
+        ,
         following: [ { handle: '@jp', isApproved: true }, ],
     },
     { 
@@ -52,9 +48,9 @@ const list = [
         pic: 'https://i.pinimg.com/originals/13/10/05/131005c3af1d6778844117dc8d5a7d80.jpg',
         password: 'music',
         isAdmin: true,
-        emails: [
-            "Kenya@newpaltz.edu"
-        ],
+        email: 
+            'Kenya@newpaltz.edu'
+        ,
         following: [ { handle: '@llama', isApproved: true }, ],
     },
     { 
@@ -64,9 +60,9 @@ const list = [
         pic: 'https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fphotos%2Fimages%2Fnewsfeed%2F001%2F529%2F300%2Fcf3.jpg',
         password: 'lol',
         isAdmin: true,
-        emails: [
-            "Joewho@newpaltz.edu"
-        ],
+        email: 
+            'Joewho@newpaltz.edu'
+        ,
         following: [ { handle: '@natewerm2000', isApproved: true }, ],
     },
     { 
@@ -76,9 +72,9 @@ const list = [
         pic: 'https://media.cnn.com/api/v1/images/stellar/prod/150108073920-peter-griffin-real-life.jpg?q=h_570,w_1024,x_0,y_0,c_crop/h_619,w_1100,c_lpad,b_rgb:061015/h_270,w_480',
         password: 'peterirl',
         isAdmin: true,
-        emails: [
-            "peter@newpaltz.edu"
-        ],
+        email: 
+            'peter@newpaltz.edu'
+        ,
         following: [ { handle: '@natewerm2000', isApproved: true }, ],
     },
     

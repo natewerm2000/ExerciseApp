@@ -11,31 +11,37 @@
                 </div>
                 <div class="field">
                     
-                    <div class="field">
-                    <label class="label">Alt</label>
-                    <div class="control">
-                        <input class="input" type="text" placeholder="Some alternate text for this picture" v-model="post.alt" />
-                    </div>
-                </div>
-                
                     
+                <label class="label">First Name:</label>
+                    <div class="control">
+                        <input class="input" type="topic" placeholder="enter new first name" v-model="post.firstName"/>
+                          
+                      </div>
                     </div>
                 <div class="field">
-                    <label class="label">Workout/Activity Type</label>
+                    <label class="label">Last Name</label>
                     <div class="control">
-                        <input class="input" type="activity" placeholder="Input the type of Activity you did" v-model="post.activity"/>
+                        <input class="input" type="activity" placeholder="enter new last name" v-model="post.lastName"/>
                           
                       </div>
                     </div>
                 </div>
             
                 <div class="field">
-                    <label class="label">Description</label>
+                    <label class="label">Username</label>
                     <div class="control">
-                        <textarea class="textarea" placeholder="Describe your activity or just anything you desire!" v-model="post.caption"></textarea>
+                        <input class="input" placeholder="enter new username" v-model="post.handle">
                     </div>
                 </div>
 
+                 <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" placeholder="Enter new email" v-model="post.email">
+                    </div>
+                </div>
+
+    
 
             </div>
         
@@ -62,6 +68,8 @@ export default {
             this.post = this.newPost;
         }
     }
+    
+    
 }
 </script>
 

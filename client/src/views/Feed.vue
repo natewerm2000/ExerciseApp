@@ -16,7 +16,7 @@
   <div class="box">
     <img src="https://cdn.dribbble.com/users/541480/screenshots/10860012/jo_dribbble_exercise_takeover_logo-grid_4x.jpg" width = "200px">
   </div>
-  <div class="title has-text-grey is-5">Feed of you and your friends</div>
+  <div class="title has-text-grey is-5">Post whatever you would like to show your friends!</div>
 </div>
       <div class="columns">
 
@@ -29,8 +29,12 @@
               </div>
           </div>
             -->
+            
         <div class="column is-half is-offset-one-quarter">
-
+         <div class="title has-text-grey is-5">Want to create a post on your exercise? start by editing this post below to get started</div>
+<div class="column">
+            <post :post="newPost" />
+        </div>
             <post-edit :new-post="newPost" @add="add()" />
 
             <div class="post" v-for=" (p, i) in posts" :key="p.src">
@@ -39,9 +43,7 @@
 
         </div>
 
-        <div class="column">
-            <post :post="newPost" />
-        </div>
+        
       </div>
 
 

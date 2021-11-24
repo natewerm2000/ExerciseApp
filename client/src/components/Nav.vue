@@ -36,10 +36,10 @@
             Social
           </router-link>
           <router-link class = "navbar-item is-tab" to = "/feed" active-class="is-active">
-            Friends and Feed
+            Social Feed
           </router-link>
-          <router-link class = "navbar-item is-tab" to = "/activitylog" active-class="is-active">
-            Activity Log
+          <router-link class = "navbar-item is-tab" to = "/exerciseplans" active-class="is-active">
+            Exercise Log
           </router-link>
            <router-link class = "navbar-item is-tab" to = "/progress" active-class="is-active">
             Weekly Progress

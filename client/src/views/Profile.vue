@@ -13,55 +13,88 @@
        
 
 
- <h3 class="title has-text-black"></h3>
-<hr class="login-hr">
+ <div class="box">
+  <div class="box">
+    <img src="https://cdn.dribbble.com/users/541480/screenshots/10860012/jo_dribbble_exercise_takeover_logo-grid_4x.jpg" width = "200px">
+  </div>
+  
+</div>
 <p class="subtitle has-text-black">Universal Fitness Profile</p>
 <div class="box">
   <div class="box">
-    <img src="post.user.pic" alt="Placeholder image">
+     <img :src="pic" width="250" :alt="username" />
   </div>
-  <div class="title has-text-grey is-5">edit information</div>
+ 
 </div>
-<form>
+
+   
         <div class="field">
           <div class="control">
-            <input class="input is-large" type="Name" placeholder="Name" autofocus=""> Nathaniel Alexander
+            <div class="title has-text-grey is-5"><b>First Name: {{firstname}}</b></div>
+            
+          </div>
+          
+        </div>
+         <div class="field">
+          <div class="control">
+            <div class="title has-text-grey is-5"><b>Last Name: {{lastname}}</b></div>
+            
           </div>
           
         </div>
         <div class="field">
           <div class="control">
-            <input class="input is-large" type="email" placeholder="Email">alexandn7@newpaltz.edu
+            <div class="title has-text-grey is-5"><b>Email: {{this.Session.user.email}}</b></div>
           </div>
         </div>
         <div class="field">
           <div class="control">
-            <input class="input is-large" type="username" placeholder="Username" autofocus="">natewerm2000
+           <div class="title has-text-grey is-5"><b>Handle: {{username}}</b></div>
+            
           </div>
         </div>
-   <div class="control">
-                            <div class="select is-fullwidth" type="gender">
-                                <select>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Non-binary</option>
-                                    <option>Other</option>
-                                   
-                                </select>
-                            </div>
-                        </div>
-                      
-<div class="field">
+        <div class="field">
           <div class="control">
-            <textarea class="textarea" placeholder="About Me"></textarea>
+           <div class="title has-text-grey is-5"><b>Password: CONFIDENTIAL </b></div>
+            
           </div>
         </div>
-        </form>
-        <button class="button is-block is-black is-large is-fullwidth">Save Changes</button>
-</div>
- 
+      <div class="columns">
+
+          <!--
+          <div class="column">
+              <div class="card">
+                  <div class="card-content">
+                      {{newPost}}
+                  </div>
+              </div>
+          </div>
+            -->
+            
+        <div class="column is-half is-offset-one-quarter">
   
+<div class="column">
+    <div class="title has-text-black is-5">Edit your profiles information below</div>
+            <post :post="newPost" />
+        </div>
+        
+           <post-edit :new-post="newPost" @add="add()" />
+
+            <div class="post" v-for=" (p, i) in posts" :key="p.src">
+                <post :post="p" @remove="remove(p, i)" />
+            </div>
+
+        </div>
+
+        
+      </div>
+
+
+  </div>
 </template>
+
+
+
 <style>
  html, body {
   font-family: sans-serif;
@@ -166,20 +199,76 @@ text-transform: uppercase;
 }
                         
                         </style>
+
 <script>
+import Post from '../components/UpdateProfile.vue';
+import Session from "../services/session";
+import { Add, Delete, Update } from "../services/users";
+import PostEdit from "../components/Profile-edit.vue";
+const newPost = ()=> ({ user: Session.user, user_handle: Session.user.handle })
 export default {
-    props: {
-        post: Object
+    components: {
+        Post,
+        PostEdit
     },
-    computed: {
-        prettyDate(){
-            if(this.post.time && this.post.time.toDateString){
-                return this.post.time.toDateString()
-            }else{
-                return 'Never'
+    data: ()=> ({
+        posts: [],
+        newPost: newPost(),
+        Session
+    }),
+    
+      computed:{
+        name(){
+            return this.Session.user.firstName + ' ' + this.Session.user.lastName;
+        },
+        firstname(){
+          return this.Session.user.firstName;
+        },
+        lastname(){
+          return this.Session.user.lastName;
+        },
+        pic(){
+          return this.Session.user.pic;
+        },
+        username(){
+          return this.Session.user.handle;
+        },
+         email(){
+          return this.Session.user.email;
+        },
+        password(){
+          return this.Session.user.password;
+        }
+        
+    },
+    
+    methods: {
+        async remove(post, i){
+            console.log({post})
+            const response = await Delete(post._id)
+            if(response.deleted){
+                this.posts.splice(i, 1)
             }
-            
+        },
+        async add(){
+            console.log("Adding new user at " + new Date())
+            const response = await Add(this.newPost);
+            console.log({ response });
+            if(response){
+                this.posts.unshift(response);
+                this.newPost = newPost();
+            }
+        },
+        async update(){
+            console.log("Adding new user at " + new Date())
+            const response = await Update(this.newPost);
+            console.log({ response });
+            if(response){
+                this.posts.unshift(response);
+                this.newPost = newPost();
+            }
         }
     }
-}
+  }
+    
 </script>
