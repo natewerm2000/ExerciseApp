@@ -11,13 +11,32 @@
     </p>
   </div>
 
+    
       </section>
       <div class="box">
   <div class="box">
     <img src="https://cdn.dribbble.com/users/541480/screenshots/10860012/jo_dribbble_exercise_takeover_logo-grid_4x.jpg" width = "200px">
   </div>
+  
   <div class="title has-text-grey is-5">Log your exercise to keep track of your activity!</div>
 </div>
+ <o-field grouped group-multiline>
+      <o-switch v-model="openOnFocus">Open dropdown on focus</o-switch>
+      <o-switch v-model="keepFirst">Keep-first</o-switch>
+    </o-field>
+    <p class="content"><b>Selected:</b> {{ selected }}</p>
+    <o-field label="Find a name">
+      <o-autocomplete
+        v-model="name"
+        placeholder="e.g. Anne"
+        :keep-first="keepFirst"
+        :open-on-focus="openOnFocus"
+        :data="filteredDataObj"
+        field="user.first_name"
+        @select="option => selected = option"
+      >
+      </o-autocomplete>
+    </o-field>
       <div class="columns">
 
           <!--
@@ -85,7 +104,19 @@ export default {
                 this.posts.unshift(response);
                 this.newPost = newPost();
             }
-        }
+        },
+         computed: {
+      filteredDataArray() {
+        return this.data.filter(option => {
+          return (
+            option
+              .toString()
+              .toLowerCase()
+              .indexOf(this.name.toLowerCase()) >= 0
+          )
+        })
+      }
+         }
     }
 }
 </script>
