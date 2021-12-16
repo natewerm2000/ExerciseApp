@@ -63,6 +63,7 @@
 </template>
 
 <script>import {  GetAll } from "../services/users"
+
 export default {
     props: {
         newPost: Object
