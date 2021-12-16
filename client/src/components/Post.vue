@@ -23,10 +23,10 @@
     </div>
 
 <div class= "Content">
- <b>Workout/Activity:</b> {{post.activity}}
+ <b>Workout/Activity: </b> {{post.activity}}
   </div>
     <div class="content">
-     <b>Description:</b> {{post.caption}}
+     <b>Description: </b> {{post.caption}}
     </div>
   </div>
     
