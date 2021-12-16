@@ -30,7 +30,7 @@
                      <div class="field">
                     <label class="label">Tag a friend to see your progress!</label>
                     <div class="control">
-                        <p class="content"><b>Selected:</b> {{ selected }}</p>
+                        <p class="content"><b>Handle Selected:</b> {{ selected }}</p>
     <o-field label="Find a JS framework">
       <o-autocomplete rounded expanded v-model="name" :data="filteredDataArray" placeholder="e.g. @natewerm2000" icon="search" clearable @select="option => selected = option">
         <template v-slot:empty>No results found</template>
@@ -42,6 +42,10 @@
             
                 <div class="field">
                     <label class="label">Description</label>
+                    <tr v-for="u in list" :key="u.handle">
+                        
+                    <td>{{ u.handle }}</td>
+                    </tr>
                     <div class="control">
                         <textarea class="textarea" placeholder="Describe your activity or just anything you desire!" v-model="post.caption"></textarea>
                     </div>
@@ -66,8 +70,8 @@ export default {
     data(){
         return {
             post: this.newPost,
-            data: ['Angular', 'Angular 2', 'Aurelia', 'Backbone', 'Ember', 'jQuery', 'Meteor', 'Node.js', 'Polymer', 'React', 'RxJS', 'Vue.js'],
-            list: [],
+            data: ['@llama', '@jp', '@rapper'],
+            daa: [],
         name: '',
         selected: null
         }
@@ -81,6 +85,9 @@ export default {
         }
     },
     computed: {
+         handles(){
+            return this.Session.user.following;
+        },
       filteredDataArray() {
         return this.data.filter(option => {
           return (
@@ -89,6 +96,7 @@ export default {
               .toLowerCase()
               .indexOf(this.name.toLowerCase()) >= 0
           )
+       
         })
       }
     }
